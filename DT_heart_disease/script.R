@@ -1,4 +1,4 @@
-set.seed(1234567) # for reproducibility
+set.seed(123456) # for reproducibility
 
 #Load the dataset and print summary information
 data = read.table("heart.txt", header=TRUE, dec=".")
@@ -57,7 +57,7 @@ printcp(tree)
 
 #Then we limit the tree at the complexity parameter corresponding to the lowest 
 #cross-validation error
-tree.pruned = prune(tree, cp=0.0096154)
+tree.pruned = prune(tree, cp=0.0176471)
 
 #We evaluate the pruned tree
 pred.train = predict(tree.pruned, data.train, type="class")
@@ -81,4 +81,4 @@ cat(c("Total accuracy: ", round(accuracy.test, 4) * 100, "%"))
 
 #Rule Extraction
 library(rattle)
-asRules(tree.pruned)
+asRules(tree.pruned, compact=TRUE)
