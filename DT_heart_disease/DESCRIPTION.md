@@ -1,8 +1,8 @@
-#Dataset Description
+# Dataset Description
 The data used in this example is a subset of the [Cleveland Database][1], widely used as a benchmark for machine learning models.
 The dataset comprises 270 observations of 76 attributes, however, the most common usages are limited to the 13 features described later.
 
-##Features Description
+## Features Description
 1. age: age in years 
 2. sex: sex
 3. cp: chest pain type
@@ -33,7 +33,7 @@ The dataset comprises 270 observations of 76 attributes, however, the most commo
 
 [1]: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
 
-#Setup
+# Setup
 The example has been developed and tested using R 3.1.3 and RStudio 1.0.143.
 See the RStudio [website][2] for installation instructions.
 
